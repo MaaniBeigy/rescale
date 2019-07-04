@@ -1,0 +1,27 @@
+[package]
+name = "rescale"
+version = "0.1.0"
+authors = ["MaaniBeigy <manibeygi@gmail.com>"]
+edition = "2018"
+description = "Generic feature scaling methods"
+readme = "README.md"
+license = "MIT/Apache-2.0"
+homepage = ""
+repository = ""
+keywords = [
+    "feature scaling", 
+    "normalization", 
+    "data preprocessing", 
+    "quantile", 
+    "fuzzy",
+]
+
+[features]
+default = []
+cache = []
+rwlock = []
+borrow = []
+fast = ["cache", "rwlock", "borrow"]
+
+[dependencies]
+rayon = "1.1.0"
